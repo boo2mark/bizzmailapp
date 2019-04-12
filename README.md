@@ -11,7 +11,7 @@
   
   #On Android.
   
-  Downlaod expo from the play store. 
+  Download expo from the play store. 
   
     Scan the given expo Qr code with the expo app
   #On IOS.
