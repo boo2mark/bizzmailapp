@@ -6,6 +6,7 @@
   `Npm install.`
   
   After that installation run.
+  
   `Npm Run.`
   
   #On Android.
