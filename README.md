@@ -3,13 +3,18 @@
 #Instalation.
   First of open the terminal and drun
   
-  Npm install.
+  `Npm install.`
   
   After that installation run.
-  Npm Run.
+  `Npm Run.`
   
-  now open expo and scan the QR code.
-  
+  #On Android.
+  Downlaod expo from the play store. 
+    Scan the given expo Qr code with the expo app
+  #On IOS.
+    Download Expo from the app store.
+    open the link to your project on your device
+    
   
   #Theme.
     React Native DO Purple Sky.
