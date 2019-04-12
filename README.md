@@ -25,6 +25,8 @@
    open the link to your project on your device
     
   
-  #Theme.
-    React Native DO Purple Sky.
-    https://github.com/wcandillon/react-native-do-purple-sky-documentation
+  #Theme
+    
+   React Native DO Purple Sky.
+   
+   https://github.com/wcandillon/react-native-do-purple-sky-documentation
