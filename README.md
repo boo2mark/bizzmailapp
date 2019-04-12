@@ -3,11 +3,11 @@
 #Instalation.
   First of open the terminal and drun
   
-  `Npm install.`
+  ```Npm install.```
   
   After that installation run.
   
-  `Npm Run.`
+  ```Npm Run.```
   
   #On Android.
   Downlaod expo from the play store. 
