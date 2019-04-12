@@ -1,6 +1,6 @@
 # myBizzmarkapp
 
-#Instalation.
+# Instalation.
   First of open the terminal and drun
   
   ```
@@ -13,19 +13,19 @@
   Npm Run
   ```
   
-  #On Android.
+  # On Android.
   
   Download expo from the play store. 
   
   Scan the given expo Qr code with the expo app
-  #On IOS.
+  # On IOS.
   
    Download Expo from the app store.
     
    open the link to your project on your device
     
   
-  #Theme
+  # Theme
     
    React Native DO Purple Sky.
    
