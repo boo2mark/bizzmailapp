@@ -1,4 +1,4 @@
-# myBizzmarkapp
+# MyBizzApp
 
 # Instalation.
   First of open the terminal and drun
