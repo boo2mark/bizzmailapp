@@ -10,7 +10,7 @@
   After that installation run.
   
   ``` 
-  javascript Npm Run
+  Npm Run
   ```
   
   #On Android.
