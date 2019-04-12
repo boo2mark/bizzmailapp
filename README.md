@@ -3,22 +3,26 @@
 #Instalation.
   First of open the terminal and drun
   
-  ```javascript Npm install```
+  ```
+  Npm install
+  ```
   
   After that installation run.
   
-  ``` javascript Npm Run```
+  ``` 
+  javascript Npm Run
+  ```
   
   #On Android.
   
   Download expo from the play store. 
   
-    Scan the given expo Qr code with the expo app
+  Scan the given expo Qr code with the expo app
   #On IOS.
   
-    Download Expo from the app store.
+   Download Expo from the app store.
     
-    open the link to your project on your device
+   open the link to your project on your device
     
   
   #Theme.
