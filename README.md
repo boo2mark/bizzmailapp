@@ -3,11 +3,11 @@
 #Instalation.
   First of open the terminal and drun
   
-  ```Npm install```
+  ```javascript Npm install```
   
   After that installation run.
   
-  ```Npm Run```
+  ``` javascript Npm Run```
   
   #On Android.
   
