@@ -1,7 +1,7 @@
 # MyBizzApp
 
 # Instalation.
-  First of open the terminal and drun
+  First of open the terminal and run
   
   ```
   Npm install
