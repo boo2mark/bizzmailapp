@@ -1,0 +1,13 @@
+{
+    "outline.problems.badges": false,
+    "outline.problems.enabled": false,
+    "outline.problems.colors": false,
+    "css.lint.argumentsInColorFunction": "ignore",
+    "css.lint.hexColorLength": "ignore",
+    "less.lint.hexColorLength": "ignore",
+    "less.lint.argumentsInColorFunction": "ignore",
+    "scss.lint.argumentsInColorFunction": "ignore",
+    "scss.lint.hexColorLength": "ignore",
+    "problems.decorations.enabled": false,
+    "problems.autoReveal": false
+}
