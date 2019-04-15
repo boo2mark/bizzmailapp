@@ -61,7 +61,8 @@ const Styles = StyleSheet.create({
         marginHorizontal: variables.contentPadding * 2
     },
     form: {
-        marginHorizontal: variables.contentPadding * 2
+        marginHorizontal: variables.contentPadding * 2,
+        height: 100,
     }
 });
 

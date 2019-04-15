@@ -1,7 +1,7 @@
 // @flow
 import * as React from "react";
 import {View, StyleSheet, Image, SafeAreaView} from "react-native";
-import {Button, Footer, FooterTab, Text, Icon} from "native-base";
+import {Button, Footer, FooterTab, Text, Icon, H2} from "native-base";
 import Swiper from "react-native-swiper";
 
 import {Styles, Images, WindowDimensions} from "../components";
@@ -47,31 +47,31 @@ export default class Walkthrough extends React.Component<ScreenProps<>> {
                     >
                         <View style={[Styles.center, Styles.flexGrow]}>
                       
-                            <Text>Welcome to MyBizzmail app</Text>
-                            <Text>You Can Add new relations</Text>
+                            <H2>Welcome to MyBizzmail app</H2>
+                            <Text>You can add relations by Form, </Text>
+                            <Text>QR Code Scanning... </Text>
+                            <Text>and hopefuly by BuisnessCard Scanner.</Text>
                         </View>
                         <View style={[Styles.center, Styles.flexGrow]}>
                            
-                            <Text>Add Relations Fast, and check on your groups</Text>
+                            <H2>Groups</H2>
                         </View>
                         <View style={[Styles.center, Styles.flexGrow]}>
-
-                            <Text>Known Bugs</Text>
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                            <Text>Empty Page(Just fo now)</Text>
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                            <Text>Empty Page(Just fo now)</Text>
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                            <Text>Empty Page(Just fo now)</Text>
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                            
-                            <Text>Known Bugs</Text>
+                            <H2>Known Bugs</H2>
                             <Text>Navigation after button press is currently broken</Text>
                             <Text>Default user group is currently not working</Text>
+                            <Text>If there is a bug you found,</Text>
+                            <Text>Or want us to know about plz Email to</Text>
+                            <Text>Fakemail@Bizzmark.com</Text>
+                        </View>
+                        <View style={[Styles.center, Styles.flexGrow]}>
+                          
+                        </View>
+                        <View style={[Styles.center, Styles.flexGrow]}>
+                            <Text>Empty Page(Just fo now)</Text>
+                        </View>
+                        <View style={[Styles.center, Styles.flexGrow]}>
+                            <Text>Empty Page(Just fo now)</Text>
                         </View>
                     </Swiper>
                 }

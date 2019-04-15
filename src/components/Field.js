@@ -146,7 +146,8 @@ export default class Field extends React.Component<FieldProps, FieldState> {
 }
 
 const styles = StyleSheet.create({
-    field: { borderBottomWidth: 0 }
+    field: { borderBottomWidth: 0 ,
+    }
 });
 
 setValue = (label, value: string) => {

@@ -123,12 +123,21 @@ _Getstring= async() =>{
                   }   
                 )
                 alert("A User has Been added.");
+                this.setState({ lastScannedUrl: null });
   console.log(obj)
 }
 
   _handlePressUrl = () => {
+    if(this.state.lastScannedUrl == null){
+     console.log("What a Easter Egg") 
+    }
+    else{
+      this._newalert();
+    }
+};
+  _newalert = () => {
     Alert.alert(
-      'Open this URL?',
+      'Add This User?',
       this.state.lastScannedUrl,
       [
         {
@@ -139,7 +148,8 @@ _Getstring= async() =>{
       ],
       { cancellable: false }
     );
-  };
+  }
+  
 
   _handlePressCancel = () => {
     this.setState({ lastScannedUrl: null });

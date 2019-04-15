@@ -2,16 +2,20 @@ import React from 'react'
 import { Router, Scene } from 'react-native-router-flux'
 import Login from './Start';
 import UserinGroup from './navigator'
-import UserinGroup1 from './navigator8'
-import UserinGroup2 from './navigator9'
-import UserinGroup3 from './navigator10'
+
 import Signup from './src/sign-up/SignUp';
 import Userprofile from './navigator.1';
 import Groupselect from './navigator2.js';
+import Settings from './navigator3.js';
 import Groupselect2 from './navigator4.js';
 import Groupselect3 from './navigator5.js';
-import Groupselect4 from './navigator6.js';
-import Settings from './navigator3.js';
+import Groupselect4 from './navigator6.js'
+/*import nothing from './navigator7.js';*/
+import UserinGroup1 from './navigator8'
+import UserinGroup2 from './navigator9'
+import UserinGroup3 from './navigator10'
+import Form from './navigator11.js';
+import Scanner from './navigator12.js';
 
 
 const Routes = () => (
@@ -30,6 +34,8 @@ const Routes = () => (
          <Scene key = "groupselect2" component = {Groupselect2} title = "Groupselect2" hideNavBar={true} showTabBar = {false}/>
          <Scene key = "groupselect" component = {Groupselect} title = "Groupselect" hideNavBar={true} showTabBar = {false}/>
          <Scene key = "setting" component = {Settings} title="Setting" hideNavBar={true} showTabBar = {false}/>
+         <Scene key = "form" component = {Form} title="Form" hideNavBar={true} showTabBar = {false}/>
+         <Scene key = "scanner" component = {Scanner} title="Scanner" hideNavBar={true} showTabBar = {false}/>
       </Scene>
    </Router>
 )
