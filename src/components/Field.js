@@ -29,7 +29,7 @@ export default class Field extends React.Component<FieldProps, FieldState> {
         UserName: "",
         UserCompany: "",
         UserPhoneNumber: "",
-
+        Search: "",
     };
 
     componentDidMount() {
@@ -91,6 +91,12 @@ export default class Field extends React.Component<FieldProps, FieldState> {
             const note = value;
             AsyncStorage.setItem("Note", note).then(
                 () => AsyncStorage.getItem("Note")
+                      .then((result)=>console.log(result)))
+        }
+        if (value1 == "Search" + " " + value){
+            const search = value;
+            AsyncStorage.setItem("Search", search).then(
+                () => AsyncStorage.getItem("Search")
                       .then((result)=>console.log(result)))
         }
 

@@ -4,7 +4,7 @@
     import * as React from "react";
     import { FlatList,Dimensions, Image, StyleSheet, View, AsyncStorage, Alert, Vibration } from "react-native";
     import { Actions } from 'react-native-router-flux';
-    import {H1,Button, Title, Text, } from "native-base";
+    import {H1, H3, Button, Title, Text, } from "native-base";
 
     import {BaseContainer, Images, Small, WindowDimensions, Field, Styles} from "../components";
     import type {ScreenProps} from "../components/Types";
@@ -13,7 +13,8 @@
 
     export default class Groups extends React.PureComponent<ScreenProps<>> {
       state = {
-        data: []
+        data: [],
+
       };
             
     
@@ -21,11 +22,11 @@
         this.fetchData();
       }
       componentDidUpdate(){
-        this.fetchData();
+        /*this.fetchData();*/
       }
       fetchData = async() => {
         const apikey = await AsyncStorage.getItem("apikey");
-        fetch('https://api.mybizzmail.com/v1/group', {
+        fetch('https://api.mybizzmail.com/v1/group/', {
             method: 'GET',
             timeout:1000,
                 headers: {
@@ -73,7 +74,7 @@
             return (
                 <View style={style.container}>
                     <Image source={picture} resizeMode="cover" style={style.img} />
-                    <H1>{title}</H1>
+                    <H3>{title}</H3>
                     <Small style={style.text}>Relation Count : {description}</Small>
                     <Button primary full onPress={this.veder.bind(this, id)}>
                         <Text>Go To {title}</Text>
@@ -104,24 +105,9 @@
                 this.Postuser();
           
         });
-        const {navigation} = this.props;
-             Alert.alert('GroupSelect',
-                
-              'Do you realy want to go to this group',
-              [
-                  
-                {text: 'Well Yes',
-                onPress: () => Actions.useringroup()},
-                {
-                  text: 'No.',
-                  onPress: () => console.log('Cancel Pressed'),
-                  style: 'cancel',
-                },
-             
-              ],
-              {cancelable: false},); 
+        Actions.useringroup()
+      }
               
-          }
           Postuser = async() =>{
             const id = this.state.groupid;
             await AsyncStorage.setItem("groupids", id).then(

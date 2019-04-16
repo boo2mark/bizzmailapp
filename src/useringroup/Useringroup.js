@@ -87,7 +87,7 @@ class Group extends React.PureComponent<GroupProps> {
       return (
           <View style={style.container}>
               <Image source={picture} resizeMode="cover" style={style.img} />
-              <H1>{title}</H1>
+              <H3>{title}</H3>
               <Small style={style.text}>Name : {description}</Small>
               <Button primary full onPress={this.userpage.bind(this, email)}>
                     <Text>Go To {title}</Text>
