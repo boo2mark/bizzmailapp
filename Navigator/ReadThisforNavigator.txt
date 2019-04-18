@@ -2,3 +2,17 @@ These Navigater are temporary
 its for the in page buttons for now
 all these navigator are going to changes just like the App.js
 Start.js will change to app.js
+
+NAvigator -> UserinGroup.
+navigator.1 -> USerprofiles.
+navigator2 -> Groupselect
+navigator3 -> Settings
+navigator4 -> Groupselect2.
+navigator5 -> Groupselect3.
+navigator6 -> Groupselect4.
+navigator7 -> No Where
+navigator8 -> UserinGroup1
+navigator9 -> UserinGroup2
+navigator10 -> UserinGroup3
+navigator11 -> Create
+navigator12 -> Scanner

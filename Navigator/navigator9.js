@@ -16,7 +16,6 @@ import {Drawer} from "../src/drawer";
 import {Home} from "../src/home";
 import {Calendar} from "../src/calendar";
 import {Overview} from "../src/overview";
-/* import {Groupselect} from "../src/groupselect4"; */
 import {Lists} from "../src/lists";
 import {Profile} from "../src/profile";
 import {Timeline} from "../src/timeline";

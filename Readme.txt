@@ -1,6 +1,7 @@
+
 App Structure.
 
-    App.js-> Start.js -> Login -> Walktrough -> Home
+App.js-> Start.js -> Login -> Walktrough -> Home
 
 
 Home -> Drawer.
