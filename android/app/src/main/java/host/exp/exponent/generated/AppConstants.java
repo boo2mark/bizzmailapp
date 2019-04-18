@@ -54,10 +54,12 @@ public class AppConstants {
         
         
         
+        
+        
         // ADD EMBEDDED RESPONSES HERE
         // START EMBEDDED RESPONSES
         embeddedResponses.add(new Constants.EmbeddedResponse("https://exp.host/@rickrom/BizzMarkApp", "assets://shell-app-manifest.json", "application/json"));
-        embeddedResponses.add(new Constants.EmbeddedResponse("https://d1wp6m56sqw74a.cloudfront.net/%40rickrom%2FBizzMarkApp%2F1.0.0%2F02345444091f7cfa51530fd32e142262-32.0.0-android.js", "assets://shell-app.bundle", "application/javascript"));
+        embeddedResponses.add(new Constants.EmbeddedResponse("https://d1wp6m56sqw74a.cloudfront.net/%40rickrom%2FBizzMarkApp%2F1.0.0%2F3b9622d5f4b6b4f9232573c77a1ec8f1-32.0.0-android.js", "assets://shell-app.bundle", "application/javascript"));
         // END EMBEDDED RESPONSES
     EMBEDDED_RESPONSES = embeddedResponses;
   }
