@@ -68,7 +68,7 @@ export default class App extends React.Component<{}, AppState> {
         );
     }
 }
-
+/* this is the main navigator This will probaly not change*/
 const MainNavigator = createDrawerNavigator({
     Home: { screen: Home },
     Calendar: { screen: Calendar },

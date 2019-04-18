@@ -85,7 +85,7 @@
     	veder = async(id) =>  {
             Vibration.vibrate(10);
             
-            const apikey = AsyncStorage.getItem("apikey");
+            const apikey = await AsyncStorage.getItem("apikey");
             console.log(apikey);
             console.log(id);
             fetch("https://api.mybizzmail.com/v1/group/" + id,  {

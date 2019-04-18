@@ -122,7 +122,7 @@ class Group extends React.PureComponent<GroupProps> {
       );
   }
   userpage = async(email) =>  {
-    Vibration.vibrate([100,40,100,40,100,40,200,40,200,40,200,40,100,40,100,40,100]);
+    Vibration.vibrate(100);
       const apikey = await AsyncStorage.getItem("apikey");
       console.log(apikey);
      await  AsyncStorage.setItem("useremail", email).then(

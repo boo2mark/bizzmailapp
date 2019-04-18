@@ -1,23 +1,23 @@
 import React from 'react'
 import { Router, Scene } from 'react-native-router-flux'
 import Login from './Start';
-import UserinGroup from './navigator'
+import UserinGroup from './Navigator/navigator.js'
 
 import Signup from './src/sign-up/SignUp';
-import Userprofile from './navigator.1';
-import Groupselect from './navigator2.js';
-import Settings from './navigator3.js';
-import Groupselect2 from './navigator4.js';
-import Groupselect3 from './navigator5.js';
-import Groupselect4 from './navigator6.js'
+import Userprofile from './Navigator/navigator.1';
+import Groupselect from './Navigator/navigator2.js';
+import Settings from './Navigator/navigator3.js';
+import Groupselect2 from './Navigator/navigator4.js';
+import Groupselect3 from './Navigator/navigator5.js';
+import Groupselect4 from './Navigator/navigator6.js'
 /*import nothing from './navigator7.js';*/
-import UserinGroup1 from './navigator8'
-import UserinGroup2 from './navigator9'
-import UserinGroup3 from './navigator10'
-import Form from './navigator11.js';
-import Scanner from './navigator12.js';
+import UserinGroup1 from './Navigator/navigator8'
+import UserinGroup2 from './Navigator/navigator9'
+import UserinGroup3 from './Navigator/navigator10'
+import Form from './Navigator/navigator11.js';
+import Scanner from './Navigator/navigator12.js';
 
-
+/* This is A Extra Route this will change in one of the next patches*/
 const Routes = () => (
    
    <Router>

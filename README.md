@@ -31,6 +31,14 @@
    
    https://github.com/wcandillon/react-native-do-purple-sky-documentation
 
-   # Complete Instruction.
+   # How Does the app start.
+   
+   It starts at App.js.
+   then goes to start.js
+   from there it will go to Login.
+   then goes to Walktrough.
+
+
+
 
    

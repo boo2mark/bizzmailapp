@@ -1,0 +1,4 @@
+These Navigater are temporary
+its for the in page buttons for now
+all these navigator are going to changes just like the App.js
+Start.js will change to app.js

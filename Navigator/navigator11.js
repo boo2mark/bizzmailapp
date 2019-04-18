@@ -8,25 +8,23 @@ import {
 } from "react-navigation";
 import {Font, AppLoading} from "expo";
 
-import {Images} from "./src/components";
-import {Login} from "./src/login";
-import {SignUp} from "./src/sign-up";
-import {Walkthrough} from "./src/walkthrough";
-import {Drawer} from "./src/drawer";
-import {Home} from "./src/home";
-import {Calendar} from "./src/calendar";
-import {Overview} from "./src/overview";
-import {Groups} from "./src/groups";
-import {Lists} from "./src/lists";
-import {Profile} from "./src/profile";
-import {Timeline} from "./src/timeline";
-import {Settings} from "./src/settings";
-import {Showgroup} from "./src/showgroup";
-import {Scanner} from "./src/scanner";
-import {Useringroup} from "./src/useringroup";
-import {Create} from "./src/create";
-import getTheme from "./native-base-theme/components";
-import variables from "./native-base-theme/variables/commonColor";
+import {Images} from "../src/components";
+import {Login} from "../src/login";
+import {SignUp} from "../src/sign-up";
+import {Walkthrough} from "../src/walkthrough";
+import {Drawer} from "../src/drawer";
+import {Home} from "../src/home";
+import {Calendar} from "../src/calendar";
+import {Overview} from "../src/overview";
+/* import {Groupselect} from "../src/groupselect4"; */
+import {Lists} from "../src/lists";
+import {Profile} from "../src/profile";
+import {Timeline} from "../src/timeline";
+import {Settings} from "../src/settings";
+import {Showgroup} from "../src/showgroup";
+import {Create} from "../src/create";
+import getTheme from "../native-base-theme/components";
+import variables from "../native-base-theme/variables/commonColor";
 
 type AppState = {
     ready: boolean
@@ -41,8 +39,8 @@ export default class App extends React.Component<{}, AppState> {
     componentWillMount() {
         const promises = [];
         promises.push(Font.loadAsync({
-            "Avenir-Book": require("./fonts/Avenir-Book.ttf"),
-            "Avenir-Light": require("./fonts/Avenir-Light.ttf")
+            "Avenir-Book": require("../fonts/Avenir-Book.ttf"),
+            "Avenir-Light": require("../fonts/Avenir-Light.ttf")
         }));
         Promise.all(promises.concat(Images.downloadAsync()))
             .then(() => this.setState({ ready: true }))
@@ -70,14 +68,12 @@ const MainNavigator = createDrawerNavigator({
     Home: { screen: Home },
     Calendar: { screen: Calendar },
     Overview: { screen: Overview },
-    Groups: { screen: Groups },
     Lists: { screen: Lists },
     Profile: { screen: Profile },
     Timeline: { screen: Timeline },
     Settings: { screen: Settings },
     Showgroup: { screen: Showgroup},
-    Create: { screen: Create },
-    Scanner: { screen: Scanner},
+    Create: { screen: Create }
 }, {
     drawerWidth: Dimensions.get("window").width,
     // eslint-disable-next-line flowtype/no-weak-types
@@ -86,7 +82,7 @@ const MainNavigator = createDrawerNavigator({
 });
 
 const AppNavigator = createAppContainer(createSwitchNavigator({
-    Useringroup: { screen: Useringroup}, 
+    Create: { screen: Create},
     Login: { screen: Login },
     SignUp: { screen: SignUp },
     Walkthrough: { screen: Walkthrough },
