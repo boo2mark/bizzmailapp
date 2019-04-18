@@ -27,8 +27,8 @@ export default class Create1 extends React.Component<NavigationProps<>> {
                 <Image source={Images.signUp} style={style.img} />
                 <View style={style.itemContainer}>
                     <View style={style.row}>
-                        <DrawerItem {...{navigation}} name="Scanner" icon="ios-qr-scanner-outline" left />
-                        <DrawerItem {...{navigation}} name="Form" icon="ios-person-add-outline" />
+                        <DrawerItem {...{navigation}} name="Scanner" icon="ios-qr-scanner-outline" left/>
+                        <DrawerItem {...{navigation}} name="Form" icon="ios-person-add-outline" left/>
                     </View>
                     <View style={style.row}>
                         <DrawerItem {...{navigation}} name="Card" icon="ios-card" left />

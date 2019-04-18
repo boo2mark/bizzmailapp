@@ -22,7 +22,7 @@ import {Profile} from "../src/profile";
 import {Timeline} from "../src/timeline";
 import {Settings} from "../src/settings";
 import {Showgroup} from "../src/showgroup";
-import {Useringroup2} from "../src/useringroup2";
+import {Useringroup1} from "../src/useringroup1";
 import {Create} from "../src/create";
 import getTheme from "../native-base-theme/components";
 import variables from "../native-base-theme/variables/commonColor";
@@ -83,7 +83,7 @@ const MainNavigator = createDrawerNavigator({
 });
 
 const AppNavigator = createAppContainer(createSwitchNavigator({
-    Useringroup2: { screen: Useringroup2},
+    Useringroup1: { screen: Useringroup1},
     Login: { screen: Login },
     SignUp: { screen: SignUp },
     Walkthrough: { screen: Walkthrough },

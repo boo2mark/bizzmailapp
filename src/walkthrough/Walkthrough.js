@@ -3,6 +3,7 @@ import * as React from "react";
 import {View, StyleSheet, Image, SafeAreaView} from "react-native";
 import {Button, Footer, FooterTab, Text, Icon, H2} from "native-base";
 import Swiper from "react-native-swiper";
+import {EvilIcons} from "@expo/vector-icons";
 
 import {Styles, Images, WindowDimensions} from "../components";
 import type {ScreenProps} from "../components/Types";
@@ -46,32 +47,25 @@ export default class Walkthrough extends React.Component<ScreenProps<>> {
                         {...{ renderPagination }}
                     >
                         <View style={[Styles.center, Styles.flexGrow]}>
-                      
+                        <Image source={Images.defaultAvatar} style={style.image} />
                             <H2>Welcome to MyBizzmail app</H2>
                             <Text>You can add relations by Form, </Text>
                             <Text>QR Code Scanning... </Text>
                             <Text>and hopefuly by BuisnessCard Scanner.</Text>
                         </View>
                         <View style={[Styles.center, Styles.flexGrow]}>
-                           
-                            <H2>Groups</H2>
+                        <Text>
+                            <Icon name="ios-add-circle" style={[style.largeIcon, Styles.center]} />
+                             </Text>
+                            <Text>Press this button in the Bottom of the Screen</Text> 
+                                <Text>to add relations</Text>
                         </View>
                         <View style={[Styles.center, Styles.flexGrow]}>
-                            <H2>Known Bugs</H2>
-                            <Text>Navigation after button press is currently broken</Text>
-                            <Text>Default user group is currently not working</Text>
-                            <Text>If there is a bug you found,</Text>
-                            <Text>Or want us to know about plz Email to</Text>
-                            <Text>Fakemail@Bizzmark.com</Text>
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                          
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                            <Text>Empty Page(Just fo now)</Text>
-                        </View>
-                        <View style={[Styles.center, Styles.flexGrow]}>
-                            <Text>Empty Page(Just fo now)</Text>
+                        <Text>
+                        <EvilIcons name="navicon" size={69} color="white" />
+                             </Text>
+                            <Text>Press this button in the top Left of the Screen</Text> 
+                                <Text>to open the menu</Text>
                         </View>
                     </Swiper>
                 }
@@ -102,6 +96,12 @@ const swiperHeight = height;
 const style = StyleSheet.create({
     container: {
         flex: 1
+    },
+    Image: {
+        width: 350,
+        height: 80,
+        resizeMode: "cover",
+        marginBottom: 70,
     },
     img: {
         ...WindowDimensions,
@@ -142,5 +142,13 @@ const style = StyleSheet.create({
     },
     phoneFooterIcon: {
         fontSize: 15
+    },
+    largeIcon: {
+
+        fontSize: 64,
+        height: 64,
+        justifyContent: "center",
+        alignItems: "center",
+        marginBottom: 50,
     }
 });
