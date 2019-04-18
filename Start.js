@@ -26,6 +26,7 @@ import {Showgroup} from "./src/showgroup";
 import {Useringroup} from "./src/useringroup";
 import {Scanner} from "./src/scanner";
 import {Create} from "./src/create";
+import {Create1} from "./src/create1";
 import getTheme from "./native-base-theme/components";
 import variables from "./native-base-theme/variables/commonColor";
 
@@ -79,6 +80,7 @@ const MainNavigator = createDrawerNavigator({
     Settings: { screen: Settings },
     Showgroup: { screen: Showgroup},
     Create: { screen: Create },
+    Create1: { screen: Create1},
     Postuser: { screen: Postuser},
     Scanner : {screen : Scanner},
 }, {

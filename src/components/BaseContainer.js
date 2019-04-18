@@ -48,7 +48,7 @@ export default class BaseContainer extends React.PureComponent<BaseContainerProp
                     <Button onPress={() => navigation.navigate("Groups")} transparent>
                             <Icon name="ios-contacts-outline" style={style.icon} />
                         </Button>
-                        <Button transparent onPress={() => navigation.navigate("Create")}>
+                        <Button transparent onPress={() => navigation.navigate("Create1")}>
                             <Icon name="ios-add-circle" style={style.largeIcon} />
                         </Button>
                         <Button onPress={() => navigation.navigate("Home")} transparent>

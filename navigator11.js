@@ -25,7 +25,6 @@ import {Showgroup} from "./src/showgroup";
 import {Create} from "./src/create";
 import getTheme from "./native-base-theme/components";
 import variables from "./native-base-theme/variables/commonColor";
-import {Create1} from "./src/create1";
 
 type AppState = {
     ready: boolean
@@ -83,7 +82,7 @@ const MainNavigator = createDrawerNavigator({
 });
 
 const AppNavigator = createAppContainer(createSwitchNavigator({
-    Create1: { screen: Create1},
+    Create: { screen: Create},
     Login: { screen: Login },
     SignUp: { screen: SignUp },
     Walkthrough: { screen: Walkthrough },

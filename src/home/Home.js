@@ -162,7 +162,7 @@ Getgroup3 = async() =>{
                 
                
                <View style={style.section}>  
-                <H1>Recent used Group</H1>
+                <H1>Primary Selected Group</H1>
                     <H2>{this.state.data}</H2>
                     <View style={{flex: 1, flexDirection: 'row'}}>
                 <View><H3 style={style.relationtitle}>RelationCount: </H3></View>

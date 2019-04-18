@@ -10,12 +10,24 @@ import variables from "../../native-base-theme/variables/commonColor";
 
 export default class Home extends React.Component<ScreenProps<>> {
   state = {
-    data: []
+    data: [],
+    email: "",
   };
   componentWillMount() {
-    this. groupinfo1();
+    this.groupinfo1();
+    this.searchclear();
   }
-  
+ componentDidUpdate() {
+    this.render();
+  }
+  componentWillUpdate(){
+
+    this.render();
+  }
+  searchclear = async() => {
+    const noll = "null";
+    await AsyncStorage.setItem("Search", noll)
+  }
   groupinfo1 = async() => {
     const apikey = await AsyncStorage.getItem("apikey");
     const id = await AsyncStorage.getItem("groupids");
@@ -50,12 +62,25 @@ export default class Home extends React.Component<ScreenProps<>> {
                 }).then(response => response.json())
                 .then(response => {
                   const datas = response.items;
+                  const Email = response.items.email
                   console.log(datas);
+                  this.setState({ email: Email})
                   this.setState({ data: datas});
                   console.log(this.state.data) 
+                  this.search();
                 })
      };
+search = async() => {
+  this.forceUpdate();
+  const search = await AsyncStorage.getItem("Search")
+  if (search == "null"){
+    console.log("NUll")
+  }
+  else{
+    console.log("Jawuhl" + search)
 
+  }
+}
 render()  : React.Node {
   const {navigation} = this.props;
   return (
@@ -84,6 +109,7 @@ class Group extends React.PureComponent<GroupProps> {
   render(): React.Node {
       const {navigation} = this.props;
       const {title, description, picture, email, buttonid} = this.props;
+      console.log("Test")
       return (
           <View style={style.container}>
               <Image source={picture} resizeMode="cover" style={style.img} />
@@ -96,7 +122,7 @@ class Group extends React.PureComponent<GroupProps> {
       );
   }
   userpage = async(email) =>  {
-    Vibration.vibrate(10);
+    Vibration.vibrate([100,40,100,40,100,40,200,40,200,40,200,40,100,40,100,40,100]);
       const apikey = await AsyncStorage.getItem("apikey");
       console.log(apikey);
      await  AsyncStorage.setItem("useremail", email).then(
