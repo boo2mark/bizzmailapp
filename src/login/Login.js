@@ -9,6 +9,7 @@ import {Images, WindowDimensions, Field, Small, Styles} from "../components";
 import {AnimatedView} from "../components/Animations";
 import type {ScreenProps} from "../components/Types";
 import variables from "../../native-base-theme/variables/commonColor";
+import base64 from 'react-native-base64'
 
 export default class Login extends React.Component<ScreenProps<>> {
     state = {
@@ -54,7 +55,7 @@ export default class Login extends React.Component<ScreenProps<>> {
                   'token': tokenn,
                 },
                   headers: {
-                    Authorization: 'MTQ4OWd2bHVjbTc5bnk1anIwOGh6bmw3dzV0a2xvdXM='
+                    Authorization: base64.encode(tokenn)
                 },
                 })
                 .then(response => response.json())

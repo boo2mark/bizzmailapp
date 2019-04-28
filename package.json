@@ -36,6 +36,7 @@
     "dependencies": {
         "@expo/vector-icons": "6.3.1",
         "blinkid-react-native": "^4.8.0",
+        "buffer": "^5.2.1",
         "colors": "1.0.3",
         "expo": "^32.0.6",
         "jest-junit-reporter": "^1.1.0",
@@ -44,6 +45,7 @@
         "native-base": "^2.8.2",
         "react": "16.5.0",
         "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+        "react-native-base64": "0.0.2",
         "react-native-camera": "^2.1.1",
         "react-native-material-dropdown": "^0.11.1",
         "react-native-ratings": "^6.3.1",
